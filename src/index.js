@@ -5,11 +5,14 @@ import cafeImage from "./assets/cafe.png";
 import logoImage from "./assets/logo.png";
 
 const mainImage = document.createElement("img");
+mainImage.classList.add("mainImage");
 mainImage.src = cafeImage;
 
-document.body.appendChild(mainImage);
+const main = document.querySelector("main");
+main.appendChild(mainImage);
 
 const logo = document.createElement("img");
+logo.classList.add("logo");
 logo.src = logoImage;
 
 const nav = document.querySelector("nav");
